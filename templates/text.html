@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>口罩哨兵{{' | %s' % name if name}}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<meta name="description" content="口罩哨兵" />
+		<meta property="og:site_name" content="口罩哨兵" />
+		<meta property="og:title" content="口罩哨兵" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="口罩哨兵" />
+		<link href="https://fonts.googleapis.com/css?family=Oswald:200,200italic,700,700italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="/kzsb/assets/main.css" />
+		<noscript><link rel="stylesheet" href="/kzsb/assets/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<section id="home-section">
+						<div id="columns01" class="container default">
+							<div class="inner">
+								<p id="text02">由豆瓣网友建立的</p>
+								<h1 id="text03">口罩哨兵</h1>
+								<p id="text01">去中心化疫情缓解组织</p>
+							</div>
+							<ul id="nav" class="navbtns">
+								<li>
+									<a href="/kzsb/" class="navbtn n01 {{ 'navactive' if page == 'home' or page == 'Cqc3T3cxVGCpDtJQ' }}">Home</a>
+								</li><li>
+									<a href="/kzsb/handbook" class="navbtn n02 {{ 'navactive' if page == 'handbook' or page == 'TXWgjPCDyXkrqWrX' }}">HandBook</a>
+								</li><li>
+									<a href="/kzsb/help" class="navbtn n05 {{ 'navactive' if page == 'help' or page == '8cKJRcwvcDGCD3tJ' }}">Help</a>
+								</li><li>
+									<a href="/kzsb/qa" class="navbtn n03 {{ 'navactive' if page == 'qa' or page == 'd6qDkhhGV3WVCWcW' }}">Q&amp;A</a>
+								</li><li>
+									<a href="/kzsb/about" class="navbtn n04 {{ 'navactive' if page == 'about' or page == 'qkRQgTcHT6yrq6xQ' }}">About</a>
+								</li>
+							</ul>
+						</div>
+						<div id="columns02" class="container default">
+							<div class="inner sbcontent">
+								{% if page != 'home' %}
+									<h2 class="sbtitle">{{name | safe}}</h2>
+									<hr class="sbhr">
+								{% endif %}
+								{{content | safe}}
+							</div>
+						</div>
+						<!-- <div id="image01" class="image full">
+							<span class="deferred">test</span>
+						</div> -->
+						<div id="columns02" class="container default">
+							<div class="inner">
+								<p id="text07">{{reads | safe}} {{("<a class='nobottom' href='%s'>查看原文</a>" % url if url) | safe}}</p>
+								<hr class="sbhr">
+							</div>
+						</div>
+						<p id="text05">© kouzhaoshobing.com</p>
+					</section>
+				</div>
+			</div>
+		</div>
+		<script src="/kzsb/assets/main.js"></script>
+	</body>
+</html>
